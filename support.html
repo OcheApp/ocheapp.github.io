@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Oche</title>
+    <meta name="description" content="Get help with Oche, the darts scoring app. FAQ and contact information.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-brand">
+            <img src="assets/icon.png" alt="Oche">
+            <span>Oche</span>
+        </a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="support.html" class="active">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+<main class="page">
+    <h1>Support</h1>
+    <p class="page-date">Oche for iOS</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How do I start a game?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>From the home screen, tap "Play" and select a game mode. Choose your players (or add AI opponents), configure the game settings, and tap "Start Game". You can play with 2–8 players depending on the mode.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How do I add AI opponents?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>In the game setup screen, tap the "+" button to add a player and select "Create AI Player". Choose a name, avatar, and ELO rating (400–2000). Higher ELO means a stronger opponent. AI players can be reused across games.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            What's included in Oche Pro?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>Pro unlocks all 7 training modes (free includes Score, Checkout, and Target Aim), career mode, tournaments, custom programs, achievements, AI coach, up to 32 players (free: 4), and the full AI ELO range up to 2000 (free: up to 1000).</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How does online multiplayer work?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>One player hosts a game and receives a 6-character room code. Share this code with your opponent, who enters it to join. The connection is peer-to-peer when possible, with a relay fallback for reliability. Both players must be on the same game mode. The host configures all game settings.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How do I use voice input?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>During any game or training session, tap the microphone icon in the toolbar to switch to voice input. Hold the button and say your throw (e.g., "treble 20" or "double 16"). For hands-free mode, enable it in the voice settings — the app will listen continuously and submit throws automatically after detecting silence. Supported in English and Spanish.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Can I sync my data across devices?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes. Oche uses iCloud to sync your players, game history, statistics, and settings across all your Apple devices. Make sure iCloud is enabled for Oche in Settings > [Your Name] > iCloud > Apps Using iCloud.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How do I delete my data?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>You can delete individual players, games, or training sessions from within the app. To delete all data, uninstall the app from your device. If iCloud sync is enabled, you may also need to remove the app's data from iCloud via Settings > [Your Name] > iCloud > Manage Storage.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            I found a bug — how do I report it?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>Report it on our <a href="https://discord.gg/PLACEHOLDER" target="_blank">Discord server</a> or email us at <a href="mailto:luisrenemontana@icloud.com">luisrenemontana@icloud.com</a> with a description of the issue, the game mode you were playing, and your device model and iOS version. Screenshots are always helpful.</p>
+        </div>
+    </div>
+
+    <h2>App Information</h2>
+    <p><strong>Current version:</strong> 1.0</p>
+    <p><strong>Requires:</strong> iOS 18.0 or later</p>
+    <p><strong>Compatibility:</strong> iPhone, iPad</p>
+
+    <h2>Community</h2>
+    <p>Join our Discord server to report bugs, find opponents for online multiplayer, request features, and chat with other players.</p>
+    <div class="contact-card">
+        <h3>Join the Community</h3>
+        <p>Bug reports, LFG, feature requests, and more.</p>
+        <a href="https://discord.gg/PLACEHOLDER" target="_blank" class="email-link">Join our Discord</a>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="contact-card">
+        <h3>Still need help?</h3>
+        <p>You can also reach us directly by email.</p>
+        <a href="mailto:luisrenemontana@icloud.com" class="email-link">luisrenemontana@icloud.com</a>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+            <a href="https://discord.gg/PLACEHOLDER" target="_blank">Discord</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Luis Montana. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

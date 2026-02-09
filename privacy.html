@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Oche</title>
+    <meta name="description" content="Privacy Policy for Oche, the darts scoring app.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-brand">
+            <img src="assets/icon.png" alt="Oche">
+            <span>Oche</span>
+        </a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html" class="active">Privacy</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+<main class="page">
+    <h1>Privacy Policy</h1>
+    <p class="page-date">Last updated: February 9, 2025</p>
+
+    <p>Oche ("we", "our", or "the app") is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h2>1. Data We Collect</h2>
+
+    <h3>Data Stored on Your Device</h3>
+    <p>All game data, player profiles, statistics, and settings are stored locally on your device using Apple's SwiftData framework. This data is synced across your devices via iCloud if you have iCloud enabled for the app. We do not have access to this data.</p>
+
+    <h3>Online Multiplayer</h3>
+    <p>When you use online multiplayer features, the following data is transmitted to facilitate the connection:</p>
+    <ul>
+        <li><strong>Player display name and avatar</strong> — shared with your opponent during a game session</li>
+        <li><strong>Room codes</strong> — temporary codes used to establish peer-to-peer connections</li>
+        <li><strong>Game state data</strong> — throw data and scores transmitted between players during a game</li>
+        <li><strong>WebRTC signalling data</strong> — temporary connection metadata routed through Firebase to establish peer-to-peer connections</li>
+    </ul>
+    <p>Online multiplayer data is ephemeral and is not stored on our servers after the game session ends. Firebase signalling rooms are automatically cleaned up.</p>
+
+    <h3>Voice Input</h3>
+    <p>When you use voice input, audio is processed by Apple's Speech Recognition framework on your device. We do not record, transmit, or store any audio data. Apple's own privacy policy governs their speech recognition service.</p>
+
+    <h3>AI Coach (Foundation Models)</h3>
+    <p>The AI Coach feature uses Apple's on-device Foundation Models to generate coaching insights. All processing happens locally on your device. No game data is sent to external AI services.</p>
+
+    <h2>2. Data We Do Not Collect</h2>
+    <ul>
+        <li>We do not collect personal information (name, email, phone number)</li>
+        <li>We do not use analytics or tracking services</li>
+        <li>We do not serve advertisements</li>
+        <li>We do not share data with third parties</li>
+        <li>We do not use cookies</li>
+    </ul>
+
+    <h2>3. In-App Purchases</h2>
+    <p>Purchases are handled entirely by Apple through StoreKit. We do not process or store any payment information. Apple's privacy policy governs all purchase transactions.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The app uses the following third-party services solely for online multiplayer connectivity:</p>
+    <ul>
+        <li><strong>Firebase Realtime Database</strong> — Used for WebRTC signalling and as a relay fallback for online multiplayer. Only temporary connection metadata is stored. Data is automatically deleted after game sessions end.</li>
+        <li><strong>Twilio TURN Servers</strong> — Used to facilitate peer-to-peer connections when direct connections are not possible. Only network routing data is processed; no game or personal data passes through Twilio.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>All game data is stored locally on your device and in your personal iCloud account. You can delete all app data at any time by deleting the app from your device. Online multiplayer session data is ephemeral and automatically deleted from Firebase after each session.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Oche does not knowingly collect any personal information from children. The app does not require account creation, does not collect personal data, and does not serve targeted content.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>Since all your data is stored locally on your device and in your iCloud account, you have full control over it:</p>
+    <ul>
+        <li><strong>Access</strong> — All your data is visible within the app</li>
+        <li><strong>Delete</strong> — Delete individual records within the app or remove all data by deleting the app</li>
+        <li><strong>Portability</strong> — Your data is synced via iCloud to your other Apple devices</li>
+    </ul>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at <a href="mailto:luisrenemontana@icloud.com">luisrenemontana@icloud.com</a>.</p>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+            <a href="https://discord.gg/PLACEHOLDER" target="_blank">Discord</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Luis Montana. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
